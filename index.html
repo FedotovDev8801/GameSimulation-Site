@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameSimulation - Core and Platform for Game Engines and Games in Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #282828;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #00ccff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        main {
+            padding: 40px;
+            text-align: center;
+        }
+        footer {
+            background-color: #282828;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer p {
+            margin: 0;
+        }
+        .engine {
+            background-color: #333;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        .engine h3 {
+            margin: 0 0 10px 0;
+        }
+        .engine p {
+            margin: 0 0 10px 0;
+        }
+        .engine a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #00ccff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .engine a:hover {
+            background-color: #ffcc00;
+        }
+        #welcome-message {
+            display: none;
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: #00ff00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GameSimulation</h1>
+        <p>The core and platform for game engines and games in Python</p>
+    </header>
+    
+    <nav>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#engines">Engines</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About GameSimulation</h2>
+            <p>GameSimulation is a platform built to support game engines and games developed in Python. It serves as the foundation for creating interactive experiences.</p>
+        </section>
+
+        <section id="features">
+            <h2>Features</h2>
+            <p>Explore the advanced features that GameSimulation offers for developers and gamers alike.</p>
+        </section>
+
+        <section id="engines">
+            <h2>Supported Game Engines</h2>
+
+            <div class="engine">
+                <h3>GameNCBuild</h3>
+                <p>GameNCBuild is an innovative game engine designed for Python developers to create robust, flexible game projects.</p>
+                <a href="https://github.com/FedotovDev8801/GameSimulation/tree/main/GameNCBuild" target="_blank">Site</a>
+            </div>
+
+        </section>
+
+        <button id="showMessageBtn">Show Welcome Message</button>
+        <p id="welcome-message">Welcome to GameSimulation!</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 GameSimulation. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('showMessageBtn').addEventListener('click', function() {
+            var message = document.getElementById('welcome-message');
+            if (message.style.display === 'none') {
+                message.style.display = 'block';
+            } else {
+                message.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
