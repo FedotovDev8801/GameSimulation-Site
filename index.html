@@ -114,23 +114,11 @@
 
         </section>
 
-        <button onclick="downloadLibrary("https://github.com/FedotovDev8801/GameSimulation/releases/download/2024-build1/GAMESIMULATION_SETUP.zip", "GAMESIMULATION_SETUP.zip")" id="download-gs">Download GameSimulation</button>
+        <button onclick="(()=>{const a=document.createElement('a');a.href='https://github.com/FedotovDev8801/GameSimulation/releases/download/2024-build1/GAMESIMULATION_SETUP.zip';a.download='GAMESIMULATION_SETUP.zip';document.body.appendChild(a);a.click();document.body.removeChild(a);})()">Downlod Latest 1.0 Setup (From GitHub)</button>
     </main>
 
     <footer>
         <p>&copy; 2024 GameSimulation. All rights reserved.</p>
     </footer>
-
-    <script>
-        function downloadLibrary(url, filename) {
-    const link = document.createElement("a");
-    link.href = url;
-    link.download = filename;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-}
-
-    </script>
 </body>
 </html>
