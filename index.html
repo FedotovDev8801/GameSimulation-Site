@@ -90,7 +90,6 @@
         <a href="#about">About</a>
         <a href="#features">Features</a>
         <a href="#engines">Engines</a>
-        <a href="#contact">Contact</a>
     </nav>
 
     <main>
@@ -109,14 +108,13 @@
 
             <div class="engine">
                 <h3>GameNCBuild</h3>
-                <p>GameNCBuild is an innovative game engine designed for Python developers to create robust, flexible game projects. GameNCBuild is simplified GameSimulation version.s</p>
+                <p>GameNCBuild is simplified GameSimulation version.s</p>
                 <a href="https://github.com/FedotovDev8801/GameSimulation/tree/main/GameNCBuild" target="_blank">Site</a>
             </div>
 
         </section>
 
-        <button id="showMessageBtn">Show Welcome Message</button>
-        <p id="welcome-message">Welcome to GameSimulation!</p>
+        <button onclick="downloadLibrary("https://github.com/FedotovDev8801/GameSimulation/releases/download/2024-build1/GAMESIMULATION_SETUP.zip", "GAMESIMULATION_SETUP.zip")" id="download-gs">Download GameSimulation</button>
     </main>
 
     <footer>
@@ -124,14 +122,15 @@
     </footer>
 
     <script>
-        document.getElementById('showMessageBtn').addEventListener('click', function() {
-            var message = document.getElementById('welcome-message');
-            if (message.style.display === 'none') {
-                message.style.display = 'block';
-            } else {
-                message.style.display = 'none';
-            }
-        });
+        function downloadLibrary(url, filename) {
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
     </script>
 </body>
 </html>
